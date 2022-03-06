@@ -2,6 +2,7 @@
 //     return <h1>Hello React</h1>
 // }
 import React from 'react';
+import ProductList from './ProductList';
 import Header from './Header'
 import Footer from './Footer'
 import Name from './Name'
@@ -10,7 +11,6 @@ import List from './utils/List'
 import AutoCounter from './utils/AutoCounters'
 //import Math from './Math';
 import Default,{Math,PI} from './Math'
-import ProductList from './utils/ProductList';
 import 'bootstrap/dist/css/bootstrap.css';
 function App(){
     console.log(Math.add(10,20))
@@ -21,12 +21,13 @@ function App(){
 // return div;
 //JSX
 return <div>
+    
+    <ProductList />
     <AutoCounter />
     <Counter count={10}/>
     
     <Header />
     <List />
-    <ProductList />
     <h1>Hello React</h1>
     <Name  personName="John" age="23"/>
     <Name personName="Joseph" age="32"/>
